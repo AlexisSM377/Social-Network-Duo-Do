@@ -34,7 +34,7 @@
             <x-menu activate-by-route>
 
                 {{-- User --}}
-                @if($user = auth()->user())
+                {{-- @if($user = auth()->user())
                     <x-menu-separator />
 
                     <x-list-item :item="$user" value="name" sub-value="email" no-separator no-hover class="-mx-2 !-my-2 rounded">
@@ -44,7 +44,7 @@
                     </x-list-item>
 
                     <x-menu-separator />
-                @endif
+                @endif --}}
 
                 <x-menu-item title="Inicio" icon="m-home" link="/dashboard" />
                 <x-menu-item title="Perfil" icon="m-user" link="/profile" />

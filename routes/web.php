@@ -14,8 +14,8 @@ Route::get('/', function(){
 Route::get('auth/github/redirect', [SocialiteAuthController::class, 'index']);
 Route::get('auth/github/callback', [SocialiteAuthController::class, 'store']);
 
+Volt::route('/dashboard', 'dashboard');
 Volt::route('/profile', 'profile.index');
-Volt::route('/dashboard', 'dashboard')->name('dashboard');
 
 
 
