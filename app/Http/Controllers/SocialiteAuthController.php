@@ -40,7 +40,7 @@ class SocialiteAuthController extends Controller
 
         Auth::login($user);
 
-        return redirect()->to('/dashboard');
+        return redirect()->to('/profile');
 
     }
 }

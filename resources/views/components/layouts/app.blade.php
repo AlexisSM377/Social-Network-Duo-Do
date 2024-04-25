@@ -46,7 +46,7 @@
                     <x-menu-separator />
                 @endif
 
-                <x-menu-item title="Inicio" icon="m-home" link="/" />
+                <x-menu-item title="Inicio" icon="m-home" link="/dashboard" />
                 <x-menu-item title="Perfil" icon="m-user" link="/profile" />
                 <x-menu-sub title="Más opciones" icon="o-list-bullet">
                     <x-menu-item title="Post guardados" icon="s-bookmark" link="####" />

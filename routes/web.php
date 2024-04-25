@@ -15,10 +15,9 @@ Route::get('auth/github/redirect', [SocialiteAuthController::class, 'index']);
 Route::get('auth/github/callback', [SocialiteAuthController::class, 'store']);
 
 Volt::route('/profile', 'profile.index');
+Volt::route('/dashboard', 'dashboard')->name('dashboard');
 
-Route::get('/dashboard', function(){
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+
 
 //Ruta para cerrar sesión(falta corregir ya que no se encutra la ruta)
 Route::post('logout', [AuthenticatedSessionController::class, 'destroy'])->name('logout');
