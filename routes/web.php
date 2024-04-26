@@ -7,9 +7,8 @@ use Livewire\Volt\Volt;
 
 
 Route::get('/', function(){
-    return view('index');
-})->name('index');
-
+    return view('welcome');
+})->name('welcome');
 
 Route::get('auth/github/redirect', [SocialiteAuthController::class, 'index']);
 Route::get('auth/github/callback', [SocialiteAuthController::class, 'store']);

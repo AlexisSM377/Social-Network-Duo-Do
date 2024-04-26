@@ -1,4 +1,4 @@
-<div>
+<div class="flex items-center justify-center">
     @foreach (auth()->user()->authProviders as $user)
         <p>Name: {{ $user->nickname }}</p>
         <img src="{{ $user->avatar }}" alt="avatar" class="w-10 h-10 rounded-full block">
