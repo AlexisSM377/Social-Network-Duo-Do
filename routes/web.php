@@ -18,12 +18,12 @@ Volt::route('/dashboard', 'posts.index');
 
 Route::middleware('auth')->group( function () {
     Volt::route('/posts/create', 'posts.create');
-    // Volt::route('/posts/{post}/edit', 'posts.edit');
-    // Volt::route('/profile', 'profile');
+    Volt::route('/posts/{post}/edit', 'posts.edit');
+    Volt::route('/profile', 'profile');
 });
 
-Volt::route('/posts/{post}', 'posts.show');
 
+Volt::route('/posts/{post}', 'posts.show');
 //Rutas del perfil del usuario
 Volt::route('/profile', 'profile.index');
 
