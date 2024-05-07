@@ -24,7 +24,7 @@ new class extends Component {
         $this->post->touch('updated_at');
 
         $this->reset('body');
-        $this->emit('refresh-comments');
+        $this->dispatch('refresh-comments');
     }
 }; ?>
 

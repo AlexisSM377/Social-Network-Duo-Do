@@ -51,8 +51,7 @@
                 <x-menu-item title="Inicio" icon="m-home" link="/dashboard" />
                 <x-menu-item title="Perfil" icon="m-user" link="/profile" />
                 <x-menu-sub title="Más opciones" icon="o-list-bullet">
-                    <x-menu-item title="Post guardados" icon="s-bookmark" link="####" />
-                    <x-menu-item title="Cerrar sesión" icon="m-x-mark" link="####" />
+                    <x-menu-item title="Cerrar sesión" icon="m-x-mark" link="/singof" />
                 </x-menu-sub>
             </x-menu>
         </x-slot:sidebar>

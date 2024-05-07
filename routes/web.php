@@ -19,13 +19,12 @@ Volt::route('/dashboard', 'posts.index');
 Route::middleware('auth')->group( function () {
     Volt::route('/posts/create', 'posts.create');
     Volt::route('/posts/{post}/edit', 'posts.edit');
-    Volt::route('/profile', 'profile');
+    Volt::route('/profile', 'profile.index');
 });
 
 
 Volt::route('/posts/{post}', 'posts.show');
-//Rutas del perfil del usuario
-Volt::route('/profile', 'profile.index');
+Volt::route('/singof', 'users.signof');
 
 //Ruta para cerrar sesión(falta corregir ya que no se encutra la ruta)
 Route::post('logout', [AuthenticatedSessionController::class, 'destroy'])->name('logout');

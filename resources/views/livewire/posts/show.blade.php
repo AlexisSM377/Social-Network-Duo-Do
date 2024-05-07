@@ -24,7 +24,7 @@ new class extends Component {
 }; ?>
 
 <div>
-    <span class="font-semibold text-base">{{ $post->title }}</span>
+    <span class="font-semibold text-2xl">{{ $post->title }}</span>
 
     <div class="mt-3 flex flex-wrap gap-3 lg:gap-8 items-center justify-between">
         <livewire:categories.tag :category="$post->category" />

@@ -24,7 +24,7 @@ new class extends Component {
     #[On('refresh-comments')]
     public function updateDone(): void
     {
-        // None. Just refresh the list from child events when necessary
+        $this->dispatch('$refresh-comments');
     }
 
     public function placeholder(): string
